@@ -2,6 +2,6 @@
 Python app, generates random dates. Early Development
 
 Plans:
-  a. Find info on random dates generated (external API?)
-  b. backend interactions, save facts found
+  - Find info on random dates generated (external API?)
+  - backend interactions, save facts found
 
