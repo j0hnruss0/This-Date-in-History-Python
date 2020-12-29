@@ -39,13 +39,16 @@ def main():
             title_text += i.string
 
         print("Your lucky date is...{} {}".format(date_month.upper(), str(date_day).upper()), file=sys.stderr)
-        print("\n\n")
+        print("\n")
         print(title_text)
         print("----Additional events of importance----")
         for j in add_content:
             add_text = ""
             for all in j.contents:
-                add_text += all.string
+                try:
+                    add_text += all.string
+                except TypeError:
+                    break
             print(add_text)
 
         try_again = input("\nTry Again? (Press Enter, or Press 'n' to quit)\n")
